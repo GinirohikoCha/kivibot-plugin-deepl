@@ -1,5 +1,5 @@
 import { KiviPlugin } from '@kivibot/core'
-import { Lang_Index, getLangCodeByIndex } from './lang'
+import { Source_Lang_Index, Target_Lang_Index, getLangCodeByIndex } from './lang'
 import { handleJobs, splitText } from './api'
 
 const { version } = require('../package.json')
@@ -57,9 +57,10 @@ plugin.onMounted(async (bot, admins) => {
 })
 
 const generateReg = (prefix: string) => {
-  const regIndex = Lang_Index.map(item => item.join('|')).join('|')
+  const sourceRegIndex = Source_Lang_Index.map(item => item.join('|')).join('|')
+  const targetRegIndex = Target_Lang_Index.map(item => item.join('|')).join('|')
 
-  return RegExp(`(${regIndex})?${prefix}(${regIndex})?`, 'g')
+  return RegExp(`(${sourceRegIndex})?${prefix}(${targetRegIndex})?`, 'g')
 }
 
 const getSourceLang = async (text: string) => {

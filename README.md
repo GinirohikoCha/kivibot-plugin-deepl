@@ -13,9 +13,9 @@
     ```
     中文、英语、日语、德语、爱沙尼亚语、保加利亚语、波兰语、丹麦语、俄语、芬兰语、法语 、荷兰语、捷克语、拉脱维亚语、立陶宛语、罗马尼亚语、葡萄牙语、瑞典语、斯洛伐克语、斯洛文尼亚语、土耳其语、乌克兰语、西班牙语、希腊语、匈牙利语、意大利语和印尼语。
     ```
-+ 🚧[计划中的功能] 非自动检测语言目前仅支持（英、美英、英英、日、中） 五种，后续更新中将补充完善
++ 🚧[计划中的功能] 非自动检测语言目前仅支持 ```德、英、日、中、法、西、俄```，后续更新中将补充完善
 + 在神经网络和最前沿的人工智能创新的支持下，我们的技术甚至可以捕捉到最细微的差别，并在翻译中体现。
-+ 丰富的语言关键词匹配，支持语言代码 ```ZH/zh```、中文简称```美英```、中文全称```中文```、英文全称```English-British```
++ 丰富的语言关键词匹配，支持语言代码 ```ZH/zh```、中文简称 ```中```、中文全称 ```美式英语```、英文全称 ```Japanese```
 + 轻量级且高质量的代码
 + 🚧[计划中的功能] 指定翻译的 口语化<=>书面化 等级
 + 🚧[计划中的功能] 默认翻译目标语言设置
@@ -41,13 +41,12 @@
 
 # 指定源语言翻译为中文
 英=> <balabalbablablablbala>
-美英=> <balabalbablablablbala>
-EN-BG=> <balabalbablablablbala>
+JA=> <balabalbablablablbala>
 Japanese=> <balabalbablablablbala>
 
 # 指定源语言翻译为目标语言
 EN=>ZH <balabalbablablablbala>
-中=>EN-BG <balabalbablablablbala>
+中=>English-British <balabalbablablablbala>
 Japanese=>中文 <balabalbablablablbala>
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "kivibot-plugin-deepl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "QQ 机器人框架 KiviBot 的 DeepL 人工智能翻译插件，全世界最准确的翻译",
   "main": "lib/index.js",
   "repository": "GinirohikoCha/kivibot-plugin-deepl",
