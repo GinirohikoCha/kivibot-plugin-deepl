@@ -8,8 +8,8 @@ const request = axios.create({
   }
 })
 
-export async function splitText(text: string) {
-  return await request.post('', `{
+export function splitText(text: string) {
+  return request.post('', `{
       "jsonrpc": "2.0",
       "method": "LMT_split_text",
       "params": {
@@ -30,8 +30,8 @@ export async function splitText(text: string) {
   })
 }
 
-export async function handleJobs(text: string, sourceLang: string = 'EN', targetLang: string = "ZH") {
-  return await request.post('', `{
+export function handleJobs(text: string, sourceLang: string = 'EN', targetLang: string = "ZH") {
+  return request.post('', `{
     "jsonrpc": "2.0",
     "method": "LMT_handle_jobs",
     "params": {

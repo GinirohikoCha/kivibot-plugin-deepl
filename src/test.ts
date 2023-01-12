@@ -1,13 +1,13 @@
 import { handleJobs, splitText } from './api'
 
-splitText('你好，世界！').then(res => {
-  console.log(res.data)
-}).catch(err => {
-  console.log(err)
-})
+const getSourceLang = async (text: string) => {
+  const { result } = (await splitText(text)).data
+  return result?.lang?.detected
+}
+getSourceLang('Hello world!').then(res => console.log(res))
 
-handleJobs('Meow Meow Meow').then(res => {
-  console.log(JSON.stringify(res.data))
-}).catch(err => {
-  console.log(err)
-})
+const translate = async (text: string, sourceLang: string | undefined, targetLang: string | undefined) => {
+  const { result } = (await handleJobs(text, undefined, undefined)).data
+  return result.translations[0].beams[0].sentences[0].text
+}
+translate('Meow Meow Meow', undefined, undefined).then(res => console.log(res))
