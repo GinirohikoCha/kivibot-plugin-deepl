@@ -1,0 +1,36 @@
+{
+  "name": "kivibot-plugin-deepl",
+  "version": "1.0.0",
+  "description": "QQ 机器人框架 KiviBot 的 DeepL 人工智能翻译插件，全世界最准确的翻译",
+  "main": "lib/index.js",
+  "repository": "GiniorhikoCha/kivibot-plugin-deepl",
+  "homepage": "https://github.com/GinirohikoCha/kivibot-plugin-deepl",
+  "author": "GinirohikoCha <rinkouatf@qq.com> (https://github.com/GinirohikoCha)",
+  "scripts": {
+    "dev": "tsc && (concurrently \"tsc -w\" \"tsc-alias -w\")",
+    "build": "tsc && tsc-alias",
+    "clean": "rimraf lib",
+    "release": "npm run clean && npm run build && npm publish"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "kivibot",
+    "kivibot-plugin",
+    "qqbot",
+    "deepl",
+    "translator"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@kivibot/core": "latest",
+    "@types/node": "^18.11.13",
+    "concurrently": "^7.6.0",
+    "rimraf": "^3.0.2",
+    "tsc-alias": "^1.8.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+  }
+}
