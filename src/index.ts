@@ -16,11 +16,15 @@ plugin.onMounted(async (bot, admins) => {
   if (!config.prefix) {
     await bot.sendPrivateMsg(plugin.mainAdmin, '无效的触发词缀')
   }
+
+  let reg = generateReg(config.prefix)
+
   plugin.onAdminCmd('/deepl', (e, params) => {
     const [cmd, value] = params
 
     if (cmd === 'prefix' && value) {
       config.prefix = value
+      reg = generateReg(config.prefix)
       plugin.saveConfig(config)
 
       return e.reply('已修改触发词缀', true)
@@ -30,8 +34,6 @@ plugin.onMounted(async (bot, admins) => {
 
     return e.reply(cmds.join('\n'), true)
   })
-
-  let reg = generateReg(config.prefix)
 
   plugin.onMessage(async (event, bot) => {
     const { raw_message } = event

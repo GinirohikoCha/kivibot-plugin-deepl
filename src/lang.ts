@@ -1,8 +1,12 @@
 export const Lang_Index = [
+  ['DE', 'de', '德', '德语', 'German'],
   ['EN', 'en', '英', '英语', 'English'],
   ['EN-GB', 'en-gb', '英英', '英式英语', 'English-British'],
   ['EN-US', 'en-us', '美英', '美式英语', 'English-American'],
+  ['ES', 'es', '西', '西班牙语', 'Spanish'],
+  ['FR', 'fr', '法', '法语', 'French'],
   ['JA', 'ja', '日', '日语', 'Japanese'],
+  ['RU', 'ru', '俄', '俄语', 'Russian'],
   ['ZH', 'zh', '中', '中文', 'Chinese'],
 ]
 
