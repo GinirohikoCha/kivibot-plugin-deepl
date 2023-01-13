@@ -13,8 +13,6 @@ export const Target_Lang_Index = Source_Lang_Index.concat([
   ['EN-US', 'en-us', '美英', '美式英语', 'English-American']
 ])
 
-console.log(Target_Lang_Index)
-
 export const getLangCodeByIndex = (index: string) => {
   let result = null
   Target_Lang_Index.find(lang => {
