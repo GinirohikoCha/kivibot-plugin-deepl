@@ -60,7 +60,7 @@ const generateReg = (prefix: string) => {
   const sourceRegIndex = Source_Lang_Index.map(item => item.join('|')).join('|')
   const targetRegIndex = Target_Lang_Index.map(item => item.join('|')).join('|')
 
-  return RegExp(`(${sourceRegIndex})?${prefix}(${targetRegIndex})?`, 'g')
+  return RegExp(`^(${sourceRegIndex})?${prefix}(${targetRegIndex})?`, 'g')
 }
 
 const getSourceLang = async (text: string) => {
