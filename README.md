@@ -1,7 +1,7 @@
 # DeepL for KiviBot
 
 [![npm-version](https://img.shields.io/npm/v/kivibot-plugin-deepl?color=006494&label=kivibot-plugin-deepl&style=flat-square)](https://npm.im/kivibot-plugin-deepl)
-[![dm](https://shields.io/npm/dm/kivibot-plugin-deepl?color=006494&style=flat-square)](https://npm.im/kivibot-plugin-deepl)
+[![dm](https://shields.io/npm/dt/kivibot-plugin-deepl?color=006494&style=flat-square)](https://npm.im/kivibot-plugin-deepl)
 
 [`KiviBot`](https://github.com/KiviBotLab/KiviBot) 的 [DeepL](https://www.deepl.com/) 插件，DeepL 翻译 - 全世界最准确的翻译。
 
